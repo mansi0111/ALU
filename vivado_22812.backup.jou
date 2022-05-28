@@ -1,0 +1,270 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Apr 30 15:09:02 2022
+# Process ID: 22812
+# Current directory: F:/Testing/Pipelined-1 - Copy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14916 F:\Testing\Pipelined-1 - Copy\mips.xpr
+# Log file: F:/Testing/Pipelined-1 - Copy/vivado.log
+# Journal file: F:/Testing/Pipelined-1 - Copy\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:/Testing/Pipelined-1 - Copy/mips.xpr}
+open_bd_design {F:/Testing/Pipelined-1 - Copy/mips.srcs/sources_1/bd/mips/mips.bd}
+update_compile_order -fileset sources_1
+close [ open {F:/Testing/Pipelined-1 - Copy/mips.srcs/sources_1/new/DataFU.v} w ]
+add_files {{F:/Testing/Pipelined-1 - Copy/mips.srcs/sources_1/new/DataFU.v}}
+update_compile_order -fileset sources_1
+close [ open {F:/Testing/Pipelined-1 - Copy/mips.srcs/sources_1/new/mux3in.v} w ]
+add_files {{F:/Testing/Pipelined-1 - Copy/mips.srcs/sources_1/new/mux3in.v}}
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference DataFU DataPath/DataFU_0
+connect_bd_net [get_bd_pins DataPath/MEM_WB/q1] [get_bd_pins DataPath/DataFU_0/mem_wb_regwr]
+connect_bd_net [get_bd_pins DataPath/EX_MEM/dff_21/q] [get_bd_pins DataPath/DataFU_0/ex_mem_regwr]
+connect_bd_net [get_bd_pins DataPath/EX_MEM/q4] [get_bd_pins DataPath/DataFU_0/ex_mem_rd]
+connect_bd_net [get_bd_pins DataPath/MEM_WB/q4] [get_bd_pins DataPath/DataFU_0/mem_wb_rd]
+connect_bd_net [get_bd_pins DataPath/ID_EX/q5] [get_bd_pins DataPath/DataFU_0/id_ex_rt]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlslice:1.0 xlslice_0
+endgroup
+move_bd_cells [get_bd_cells DataPath] [get_bd_cells xlslice_0]
+set_property -dict [list CONFIG.DIN_TO {21} CONFIG.DIN_FROM {25} CONFIG.DOUT_WIDTH {5}] [get_bd_cells DataPath/xlslice_6]
+connect_bd_net [get_bd_pins DataPath/IF_ID/instruction] [get_bd_pins DataPath/xlslice_6/Din]
+create_bd_cell -type module -reference dff dff_0
+move_bd_cells [get_bd_cells DataPath] [get_bd_cells dff_0]
+move_bd_cells [get_bd_cells DataPath/ID_EX] [get_bd_cells DataPath/dff_0]
+connect_bd_net [get_bd_pins DataPath/xlslice_6/Dout] [get_bd_pins DataPath/ID_EX/dff_0/d]
+connect_bd_net [get_bd_pins DataPath/in_clock] [get_bd_pins DataPath/ID_EX/dff_0/i_clk]
+undo
+create_bd_cell -type module -reference dff dff_0
+move_bd_cells [get_bd_cells DataPath] [get_bd_cells dff_0]
+connect_bd_net [get_bd_pins DataPath/in_clock] [get_bd_pins DataPath/dff_0/i_clk]
+delete_bd_objs [get_bd_cells DataPath/dff_0]
+move_bd_cells [get_bd_cells DataPath] [get_bd_cells DataPath/ID_EX/dff_0]
+connect_bd_net [get_bd_pins DataPath/in_clock] [get_bd_pins DataPath/dff_0/i_clk]
+move_bd_cells [get_bd_cells DataPath/ID_EX] [get_bd_cells DataPath/dff_0]
+connect_bd_net [get_bd_pins DataPath/ID_EX/dff_0/q] [get_bd_pins DataPath/DataFU_0/id_ex_rs]
+create_bd_cell -type module -reference mux3in DataPath/mux3in_0
+create_bd_cell -type module -reference mux3in DataPath/mux3in_0
+connect_bd_net [get_bd_pins DataPath/DataFU_0/ForwardA] [get_bd_pins DataPath/mux3in_0/ctrl]
+connect_bd_net [get_bd_pins DataPath/ID_EX/q9] [get_bd_pins DataPath/mux3in_0/in0]
+connect_bd_net [get_bd_pins DataPath/mux_2/muxOut] [get_bd_pins DataPath/mux3in_0/in1]
+connect_bd_net [get_bd_pins DataPath/EX_MEM/q7] [get_bd_pins DataPath/mux3in_0/in2]
+delete_bd_objs [get_bd_nets DataPath/dff_5_q]
+connect_bd_net [get_bd_pins DataPath/ID_EX/q9] [get_bd_pins DataPath/EX_MEM/d6] -boundary_type upper
+connect_bd_net [get_bd_pins DataPath/ID_EX/q10] [get_bd_pins DataPath/mux_1/in0]
+undo
+undo
+undo
+delete_bd_objs [get_bd_nets DataPath/dff_5_q]
+connect_bd_net [get_bd_pins DataPath/ID_EX/q9] [get_bd_pins DataPath/EX_MEM/d6] -boundary_type upper
+connect_bd_net [get_bd_pins DataPath/ID_EX/q9] [get_bd_pins DataPath/mux_1/in0]
+connect_bd_net [get_bd_pins DataPath/ID_EX/q10] [get_bd_pins DataPath/mux3in_0/in0]
+delete_bd_objs [get_bd_nets DataPath/ID_EX_q10]
+connect_bd_net [get_bd_pins DataPath/ID_EX/q10] [get_bd_pins DataPath/mux3in_0/in0]
+connect_bd_net [get_bd_pins DataPath/mux3in_0/muxOut] [get_bd_pins DataPath/alu_0/op1]
+create_bd_cell -type module -reference mux3in DataPath/mux3in_1
+connect_bd_net [get_bd_pins DataPath/DataFU_0/ForwardB] [get_bd_pins DataPath/mux3in_1/ctrl]
+delete_bd_objs [get_bd_nets DataPath/ID_EX_q9]
+connect_bd_net [get_bd_pins DataPath/ID_EX/q9] [get_bd_pins DataPath/mux3in_1/in0]
+connect_bd_net [get_bd_pins DataPath/ID_EX/q9] [get_bd_pins DataPath/EX_MEM/d6] -boundary_type upper
+connect_bd_net [get_bd_pins DataPath/mux3in_1/muxOut] [get_bd_pins DataPath/mux_1/in0]
+connect_bd_net [get_bd_pins DataPath/mux_2/muxOut] [get_bd_pins DataPath/mux3in_1/in1]
+connect_bd_net [get_bd_pins DataPath/EX_MEM/q7] [get_bd_pins DataPath/mux3in_1/in2]
+save_bd_design
+update_compile_order -fileset sources_1
+generate_target Simulation [get_files {F:/Testing/Pipelined-1 - Copy/mips.srcs/sources_1/bd/mips/mips.bd}]
+export_ip_user_files -of_objects [get_files {F:/Testing/Pipelined-1 - Copy/mips.srcs/sources_1/bd/mips/mips.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{F:/Testing/Pipelined-1 - Copy/mips.srcs/sources_1/bd/mips/mips.bd}}] -directory {F:/Testing/Pipelined-1 - Copy/mips.ip_user_files/sim_scripts} -ip_user_files_dir {F:/Testing/Pipelined-1 - Copy/mips.ip_user_files} -ipstatic_source_dir {F:/Testing/Pipelined-1 - Copy/mips.ip_user_files/ipstatic} -lib_map_path [list {modelsim=F:/Testing/Pipelined-1 - Copy/mips.cache/compile_simlib/modelsim} {questa=F:/Testing/Pipelined-1 - Copy/mips.cache/compile_simlib/questa} {riviera=F:/Testing/Pipelined-1 - Copy/mips.cache/compile_simlib/riviera} {activehdl=F:/Testing/Pipelined-1 - Copy/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config {F:/Testing/Pipelined-1 - Copy/mips_wrapper_behav.wcfg}
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+run 10 ps
+open_bd_design {F:/Testing/Pipelined-1 - Copy/mips.srcs/sources_1/bd/mips/mips.bd}
+delete_bd_objs [get_bd_nets DataPath/xlslice_6_Dout] [get_bd_nets DataPath/ID_EX/d8_1] [get_bd_pins DataPath/ID_EX/d8]
+connect_bd_net [get_bd_pins DataPath/xlslice_6/Dout] [get_bd_pins DataPath/ID_EX/dff_0/d]
+delete_bd_objs [get_bd_nets DataPath/xlslice_6_Dout]
+delete_bd_objs [get_bd_nets DataPath/ID_EX/d8_1] [get_bd_pins DataPath/ID_EX/d8]
+connect_bd_net [get_bd_pins DataPath/xlslice_6/Dout] [get_bd_pins DataPath/ID_EX/dff_0/d]
+startgroup
+set_property -dict [list CONFIG.width {5}] [get_bd_cells DataPath/ID_EX/dff_0]
+endgroup
+move_bd_cells [get_bd_cells /] [get_bd_cells DataPath/ID_EX/dff_15]
+undo
+delete_bd_objs [get_bd_nets DataPath/xlslice_6_Dout] [get_bd_nets DataPath/ID_EX/d8_1] [get_bd_pins DataPath/ID_EX/d8]
+connect_bd_net [get_bd_pins DataPath/xlslice_6/Dout] [get_bd_pins DataPath/ID_EX/dff_0/d]
+delete_bd_objs [get_bd_nets DataPath/ID_EX_q14]
+delete_bd_objs [get_bd_nets DataPath/ID_EX/dff_0_q]
+connect_bd_net [get_bd_pins DataPath/ID_EX/dff_0/q] [get_bd_pins DataPath/DataFU_0/id_ex_rs]
+delete_bd_objs [get_bd_pins DataPath/ID_EX/q14]
+save_bd_design
+close_sim
+generate_target Simulation [get_files {F:/Testing/Pipelined-1 - Copy/mips.srcs/sources_1/bd/mips/mips.bd}]
+export_ip_user_files -of_objects [get_files {F:/Testing/Pipelined-1 - Copy/mips.srcs/sources_1/bd/mips/mips.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{F:/Testing/Pipelined-1 - Copy/mips.srcs/sources_1/bd/mips/mips.bd}}] -directory {F:/Testing/Pipelined-1 - Copy/mips.ip_user_files/sim_scripts} -ip_user_files_dir {F:/Testing/Pipelined-1 - Copy/mips.ip_user_files} -ipstatic_source_dir {F:/Testing/Pipelined-1 - Copy/mips.ip_user_files/ipstatic} -lib_map_path [list {modelsim=F:/Testing/Pipelined-1 - Copy/mips.cache/compile_simlib/modelsim} {questa=F:/Testing/Pipelined-1 - Copy/mips.cache/compile_simlib/questa} {riviera=F:/Testing/Pipelined-1 - Copy/mips.cache/compile_simlib/riviera} {activehdl=F:/Testing/Pipelined-1 - Copy/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config {F:/Testing/Pipelined-1 - Copy/mips_wrapper_behav.wcfg}
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+open_bd_design {F:/Testing/Pipelined-1 - Copy/mips.srcs/sources_1/bd/mips/mips.bd}
+update_module_reference mips_instructionMemory_0_0
+close_sim
+generate_target Simulation [get_files {F:/Testing/Pipelined-1 - Copy/mips.srcs/sources_1/bd/mips/mips.bd}]
+export_ip_user_files -of_objects [get_files {F:/Testing/Pipelined-1 - Copy/mips.srcs/sources_1/bd/mips/mips.bd}] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files {{F:/Testing/Pipelined-1 - Copy/mips.srcs/sources_1/bd/mips/mips.bd}}] -directory {F:/Testing/Pipelined-1 - Copy/mips.ip_user_files/sim_scripts} -ip_user_files_dir {F:/Testing/Pipelined-1 - Copy/mips.ip_user_files} -ipstatic_source_dir {F:/Testing/Pipelined-1 - Copy/mips.ip_user_files/ipstatic} -lib_map_path [list {modelsim=F:/Testing/Pipelined-1 - Copy/mips.cache/compile_simlib/modelsim} {questa=F:/Testing/Pipelined-1 - Copy/mips.cache/compile_simlib/questa} {riviera=F:/Testing/Pipelined-1 - Copy/mips.cache/compile_simlib/riviera} {activehdl=F:/Testing/Pipelined-1 - Copy/mips.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+open_wave_config {F:/Testing/Pipelined-1 - Copy/mips_wrapper_behav.wcfg}
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+current_wave_config {mips_wrapper_behav.wcfg}
+add_wave {{/mips_wrapper/mips_i/DataPath/RegFile_0/inst/\regFile[9].reg_i }} 
+close_sim
+launch_simulation
+open_wave_config {F:/Testing/Pipelined-1 - Copy/mips_wrapper_behav.wcfg}
+source mips_wrapper.tcl
+current_wave_config {mips_wrapper_behav.wcfg}
+add_wave {{/mips_wrapper/mips_i/DataPath/RegFile_0}} 
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+launch_simulation
+open_wave_config {F:/Testing/Pipelined-1 - Copy/mips_wrapper_behav.wcfg}
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+close_sim
+launch_simulation
+open_wave_config {F:/Testing/Pipelined-1 - Copy/mips_wrapper_behav.wcfg}
+source mips_wrapper.tcl
+add_force {/mips_wrapper/in_clock} -radix bin {1 0ns} {0 50ps} -repeat_every 100ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+run 100 ps
+save_wave_config {F:/Testing/Pipelined-1 - Copy/mips_wrapper_behav.wcfg}
+open_bd_design {F:/Testing/Pipelined-1 - Copy/mips.srcs/sources_1/bd/mips/mips.bd}
+update_module_reference mips_instructionMemory_0_0

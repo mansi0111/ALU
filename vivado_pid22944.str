@@ -1,0 +1,713 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 22944
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Apr 28 16:26:47 IST 2022
+Time zone: 	India Standard Time (Asia/Calcutta)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.2 64-bit
+Java home: 	F:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	F:/Xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	madv0
+User home directory: C:/Users/madv0
+User working directory: F:/COA assignment/Pipelined-1
+User country: 	IN
+User language: 	en
+User locale: 	en_IN
+
+RDI_BASEROOT: F:/Xilinx/Vivado
+HDI_APPROOT: F:/Xilinx/Vivado/2020.2
+RDI_DATADIR: F:/Xilinx/Vivado/2020.2/data
+RDI_BINDIR: F:/Xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/madv0/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/madv0/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/madv0/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	F:/Xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	F:/COA assignment/Pipelined-1/vivado.log
+Vivado journal file location: 	F:/COA assignment/Pipelined-1/vivado.jou
+Engine tmp dir: 	F:/COA assignment/Pipelined-1/.Xil/Vivado-22944-DESKTOP-H1H088Q
+
+Xilinx Environment Variables
+----------------------------
+XILINX: F:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: F:/Xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: F:/Xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: F:/Xilinx/Vivado/2020.2
+XILINX_VIVADO: F:/Xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: F:/Xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	159 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,020 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: F:\COA assignment\Pipelined-1\mips.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {F:/COA assignment/Pipelined-1/mips.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,020 MB. GUI used memory: 55 MB. Current time: 4/28/22, 4:26:48 PM IST
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 59 MB (+59814kb) [00:00:11]
+// [Engine Memory]: 1,020 MB (+918448kb) [00:00:11]
+// [GUI Memory]: 66 MB (+3672kb) [00:00:11]
+// [GUI Memory]: 96 MB (+28035kb) [00:00:12]
+// [GUI Memory]: 102 MB (+1069kb) [00:00:13]
+// WARNING: HEventQueue.dispatchEvent() is taking  3890 ms.
+// Tcl Message: open_project {F:/COA assignment/Pipelined-1/mips.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'E:/COA_assign/Assignment 2 - Team  6/Jump-Pipelined' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2020.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 1007.859 ; gain = 0.000 
+// Project name: mips; location: F:/COA assignment/Pipelined-1; part: xc7z020clg400-1
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 117 MB (+10968kb) [00:00:17]
+selectButton(PAResourceQtoS.RunGadget_SHOW_WARNING_AND_ERROR_MESSAGES_IN_MESSAGES, "22 warnings"); // h
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// [GUI Memory]: 132 MB (+9140kb) [00:00:45]
+// WARNING: HTimer (FileMgr Design Graph Update Timer) is taking 414ms to process. Increasing delay to 3000 ms.
+// Elapsed time: 40 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 7, false); // u
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+selectMenuItem((HResource) null, "mips.bd"); // ak
+// bz (cr):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: open_bd_design {F:/COA assignment/Pipelined-1/mips.srcs/sources_1/bd/mips/mips.bd} 
+// Tcl Message: Reading block design file <F:/COA assignment/Pipelined-1/mips.srcs/sources_1/bd/mips/mips.bd>... 
+// TclEventType: RSB_CHANGE_CURRENT_DIAGRAM
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_LOCK_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_OPEN_DIAGRAM
+// [GUI Memory]: 141 MB (+2572kb) [00:01:06]
+// WARNING: HEventQueue.dispatchEvent() is taking  2687 ms.
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+dismissDialog("Open Block Design"); // bz
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 21 seconds
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_CHANGED_MODULES, "Refresh Changed Modules"); // h
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PACKAGER_OBJECT_ADD
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: IP_LOCK_CHANGE
+// bz (cr):  Refresh Changed Modules : addNotify
+// TclEventType: BDCELL_LOCK_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: FILESET_UPDATE_IP
+// TclEventType: IP_UPGRADE_COMPLETE
+// Tcl Message: update_module_reference mips_controlLogic_0_0 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: Upgrading 'F:/COA assignment/Pipelined-1/mips.srcs/sources_1/bd/mips/mips.bd' 
+// Tcl Message: INFO: [IP_Flow 19-3420] Updated mips_controlLogic_0_0 to use current project options 
+// Tcl Message: Wrote  : <F:\COA assignment\Pipelined-1\mips.srcs\sources_1\bd\mips\mips.bd>  Wrote  : <F:/COA assignment/Pipelined-1/mips.srcs/sources_1/bd/mips/ui/bd_e0a3b57f.ui>  
+dismissDialog("Refresh Changed Modules"); // bz
+// TclEventType: DG_GRAPH_STALE
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // Q
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_nets DataPath/mux_3_muxOut] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_nets DataPath/adder_1_adderOut] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins DataPath/adder_1/adderOut] [get_bd_pins DataPath/dff_14/d] 
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_nets DataPath/dff_14_q] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins DataPath/dff_14/q] [get_bd_pins DataPath/mux_3/in1] 
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins DataPath/mux_3/muxOut] [get_bd_pins DataPath/mux_4/in0] 
+// Elapsed time: 82 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1330, 291, 1570, 791, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ah
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_HIERARCHY, "Create Hierarchy..."); // ak
+// hq (cr): Create Hierarchy: addNotify
+dismissDialog("Create Hierarchy"); // hq
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 305, 643, 1570, 791, false, false, false, true, false); // hv - Popup Trigger
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_HIERARCHY, "Create Hierarchy..."); // ak
+// hq (cr): Create Hierarchy: addNotify
+dismissDialog("Create Hierarchy"); // hq
+// [GUI Memory]: 149 MB (+1090kb) [00:04:31]
+// Elapsed time: 87 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1419, 320, 1570, 791, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ah
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_HIERARCHY, "Create Hierarchy..."); // ak
+// hq (cr): Create Hierarchy: addNotify
+setText(PAResourceQtoS.SystemBuilderMenu_CELL_NAME, "IF/ID"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// HOptionPane Error: 'The name 'IF/ID' contains illegal characters. (Vivado)'
+setText(PAResourceQtoS.SystemBuilderMenu_CELL_NAME, "IF_ID", true); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Create Hierarchy"); // hq
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: group_bd_cells IF_ID [get_bd_cells DataPath/dff_0] [get_bd_cells DataPath/dff_2] 
+// Elapsed time: 27 seconds
+setText("PAResourceQtoS.SystemTreePopup_DESIGN_HIERARCHY_TREE_SEARCH_FIELD", "dff_18", true); // OverlayTextField
+// Elapsed time: 30 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1000, 261, 1570, 791, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ah
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_HIERARCHY, "Create Hierarchy..."); // ak
+// hq (cr): Create Hierarchy: addNotify
+setText(PAResourceQtoS.SystemBuilderMenu_CELL_NAME, "ID_EX"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Create Hierarchy"); // hq
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: group_bd_cells ID_EX [get_bd_cells DataPath/dff_5] [get_bd_cells DataPath/dff_23] 
+// Elapsed time: 97 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 980, 323, 1570, 791, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ah
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_HIERARCHY, "Create Hierarchy..."); // ak
+// hq (cr): Create Hierarchy: addNotify
+dismissDialog("Create Hierarchy"); // hq
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 964, 323, 1570, 791, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ah
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_HIERARCHY, "Create Hierarchy..."); // ak
+// hq (cr): Create Hierarchy: addNotify
+dismissDialog("Create Hierarchy"); // hq
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+// Elapsed time: 14 seconds
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'group_bd_cells ID_EX [get_bd_cells DataPath/dff_5] [get_bd_cells DataPath/dff_23]' 
+// Run Command: RDIResourceCommand.RDICommands_UNDO
+// Elapsed time: 37 seconds
+typeControlKey(null, null, 'z');
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: undo 
+// Tcl Message: INFO: [Common 17-17] undo 'group_bd_cells IF_ID [get_bd_cells DataPath/dff_0] [get_bd_cells DataPath/dff_2]' 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1379, 183, 1570, 791, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_HIERARCHY, "Create Hierarchy..."); // ak
+// hq (cr): Create Hierarchy: addNotify
+setText(PAResourceQtoS.SystemBuilderMenu_CELL_NAME, "MEM_WB"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Create Hierarchy"); // hq
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: group_bd_cells MEM_WB [get_bd_cells DataPath/dff_24] [get_bd_cells DataPath/dff_25] [get_bd_cells DataPath/dff_13] [get_bd_cells DataPath/dff_11] 
+selectButton(PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, "save_rsb_design"); // E
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <F:\COA assignment\Pipelined-1\mips.srcs\sources_1\bd\mips\mips.bd>  Wrote  : <F:/COA assignment/Pipelined-1/mips.srcs/sources_1/bd/mips/ui/bd_e0a3b57f.ui>  Wrote  : <F:/COA assignment/Pipelined-1/mips.srcs/sources_1/bd/mips/ui/bd_c1bbd58e.ui>  
+// Elapsed time: 14 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "System_zoom_out"); // E
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Elapsed time: 83 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1197, 597, 1570, 791, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ah
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_HIERARCHY, "Create Hierarchy..."); // ak
+// hq (cr): Create Hierarchy: addNotify
+dismissDialog("Create Hierarchy"); // hq
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 1172, 608, 1570, 791, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ah
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_HIERARCHY, "Create Hierarchy..."); // ak
+// hq (cr): Create Hierarchy: addNotify
+// Elapsed time: 10 seconds
+setText(PAResourceQtoS.SystemBuilderMenu_CELL_NAME, "IF_ID"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Create Hierarchy"); // hq
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: group_bd_cells IF_ID [get_bd_cells DataPath/dff_2] 
+// Elapsed time: 14 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 529, 261, 1570, 791, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ah
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_HIERARCHY, "Create Hierarchy..."); // ak
+// hq (cr): Create Hierarchy: addNotify
+setText(PAResourceQtoS.SystemBuilderMenu_CELL_NAME, "EX_MEM"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Create Hierarchy"); // hq
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: group_bd_cells EX_MEM [get_bd_cells DataPath/dff_21] [get_bd_cells DataPath/dff_19] 
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 287, 418, 1570, 791, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ah
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: move_bd_cells [get_bd_cells DataPath/IF_ID] [get_bd_cells DataPath/dff_0] 
+// Elapsed time: 78 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 371, 286, 1570, 791, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ah
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_HIERARCHY, "Create Hierarchy..."); // ak
+// hq (cr): Create Hierarchy: addNotify
+setText(PAResourceQtoS.SystemBuilderMenu_CELL_NAME, "ID"); // aa
+dismissDialog("Create Hierarchy"); // hq
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 354, 269, 1570, 791, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ah
+selectMenuItem(PAResourceQtoS.SystemBuilderMenu_CREATE_HIERARCHY, "Create Hierarchy..."); // ak
+// hq (cr): Create Hierarchy: addNotify
+setText(PAResourceQtoS.SystemBuilderMenu_CELL_NAME, "ID_EX"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: RSB_SCRIPT_TASK
+dismissDialog("Create Hierarchy"); // hq
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: group_bd_cells ID_EX [get_bd_cells DataPath/dff_6] [get_bd_cells DataPath/dff_22] [get_bd_cells DataPath/dff_29] 
+// bz (cr):  Create Hierarchy : addNotify
+dismissDialog("Create Hierarchy"); // bz
+selectButton(PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, "save_rsb_design"); // E
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <F:\COA assignment\Pipelined-1\mips.srcs\sources_1\bd\mips\mips.bd>  Wrote  : <F:/COA assignment/Pipelined-1/mips.srcs/sources_1/bd/mips/ui/bd_e0a3b57f.ui>  Wrote  : <F:/COA assignment/Pipelined-1/mips.srcs/sources_1/bd/mips/ui/bd_c1bbd58e.ui>  
+// Tcl Command: 'set_property location {3 583 663} [get_bd_cells DataPath/dff_18]'
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {3 583 663} [get_bd_cells DataPath/dff_18] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: move_bd_cells [get_bd_cells DataPath/ID_EX] [get_bd_cells DataPath/dff_18] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: move_bd_cells [get_bd_cells DataPath/EX_MEM] [get_bd_cells DataPath/dff_30] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: move_bd_cells [get_bd_cells DataPath/EX_MEM] [get_bd_cells DataPath/dff_14] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: move_bd_cells [get_bd_cells DataPath/ID_EX] [get_bd_cells DataPath/dff_17] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: move_bd_cells [get_bd_cells DataPath/ID_EX] [get_bd_cells DataPath/dff_8] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: move_bd_cells [get_bd_cells DataPath/ID_EX] [get_bd_cells DataPath/dff_16] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: move_bd_cells [get_bd_cells DataPath/EX_MEM] [get_bd_cells DataPath/dff_7] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: move_bd_cells [get_bd_cells DataPath/ID_EX] [get_bd_cells DataPath/dff_4] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: move_bd_cells [get_bd_cells DataPath/ID_EX] [get_bd_cells DataPath/dff_23] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: move_bd_cells [get_bd_cells DataPath/ID_EX] [get_bd_cells DataPath/dff_5] 
+// Elapsed time: 129 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "System_zoom_in"); // E
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "System_zoom_out"); // E
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: move_bd_cells [get_bd_cells DataPath/ID_EX] [get_bd_cells DataPath/dff_3] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: move_bd_cells [get_bd_cells DataPath/ID_EX] [get_bd_cells DataPath/dff_26] 
+// Tcl Message: move_bd_cells [get_bd_cells DataPath/EX_MEM] [get_bd_cells DataPath/ID_EX/dff_26] [get_bd_cells DataPath/dff_20] [get_bd_cells DataPath/dff_12] 
+// Tcl Message: ERROR: [BD 41-83] Exec TCL: objects are not on same level of design 
+// Tcl Message: ERROR: [Common 17-39] 'move_bd_cells' failed due to earlier errors. 
+// bz (cr):  Move Blocks : addNotify
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'move_bd_cells' failed due to earlier errors.  
+// Elapsed time: 104 seconds
+dismissDialog("Move Blocks"); // bz
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: move_bd_cells [get_bd_cells DataPath/EX_MEM] [get_bd_cells DataPath/dff_20] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: move_bd_cells [get_bd_cells DataPath/EX_MEM] [get_bd_cells DataPath/dff_12] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: move_bd_cells [get_bd_cells DataPath/EX_MEM] [get_bd_cells DataPath/dff_10] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: move_bd_cells [get_bd_cells DataPath/EX_MEM] [get_bd_cells DataPath/dff_27] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: move_bd_cells [get_bd_cells DataPath/EX_MEM] [get_bd_cells DataPath/dff_28] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: move_bd_cells [get_bd_cells DataPath/ID_EX] [get_bd_cells DataPath/dff_1] 
+// Elapsed time: 47 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 239, 63, 1570, 791, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SelectMenu_HIGHLIGHT, "Highlight"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "Regenerate Layout"); // ak
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout -hierarchy [get_bd_cells DataPath]'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout -hierarchy [get_bd_cells DataPath] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: move_bd_cells [get_bd_cells DataPath/ID_EX] [get_bd_cells DataPath/dff_15] 
+// Elapsed time: 65 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "System_zoom_in"); // E
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Elapsed time: 87 seconds
+unMinimizeFrame(RDIResource.RDIViews_PROPERTIES, "Properties"); // az
+unMinimizeFrame(PAResourceOtoP.PAViews_SIGNALS, "Signals"); // az
+// Elapsed time: 126 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "System_zoom_out"); // E
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Elapsed time: 19 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_IN, "System_zoom_in"); // E
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Elapsed time: 21 seconds
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "System_zoom_out"); // E
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+selectButton(PAResourceCommand.PACommandNames_ZOOM_OUT, "System_zoom_out"); // E
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_OUT
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 596, 341, 1065, 791, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_ORIENTATION, "Orientation"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "Regenerate Layout"); // ak
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout -hierarchy [get_bd_cells DataPath]'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout -hierarchy [get_bd_cells DataPath] 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: move_bd_cells [get_bd_cells DataPath/MEM_WB] [get_bd_cells DataPath/dff_9] 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,020 MB. GUI used memory: 88 MB. Current time: 4/28/22, 4:56:49 PM IST
+// Elapsed time: 747 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 563, 353, 1065, 791, false, false, false, true, false); // hv - Popup Trigger
+selectMenu(PAResourceQtoS.SystemBuilderView_PINNING, "Pinning"); // ah
+selectMenu(PAResourceQtoS.SystemBuilderView_EXPAND_COLLAPSE, "Expand/Collapse"); // ah
+selectMenuItem(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "Regenerate Layout"); // ak
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// Tcl Command: 'regenerate_bd_layout -hierarchy [get_bd_cells DataPath]'
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout -hierarchy [get_bd_cells DataPath] 
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ah
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ac
+selectButton(PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN, "save_rsb_design"); // E
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : <F:\COA assignment\Pipelined-1\mips.srcs\sources_1\bd\mips\mips.bd>  Wrote  : <F:/COA assignment/Pipelined-1/mips.srcs/sources_1/bd/mips/ui/bd_e0a3b57f.ui>  Wrote  : <F:/COA assignment/Pipelined-1/mips.srcs/sources_1/bd/mips/ui/bd_c1bbd58e.ui>  

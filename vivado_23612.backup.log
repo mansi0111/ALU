@@ -1,0 +1,82 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Apr 28 17:04:02 2022
+# Process ID: 23612
+# Current directory: F:/COA assignment/Pipelined-1 - Copy
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1388 F:\COA assignment\Pipelined-1 - Copy\mips.xpr
+# Log file: F:/COA assignment/Pipelined-1 - Copy/vivado.log
+# Journal file: F:/COA assignment/Pipelined-1 - Copy\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {F:/COA assignment/Pipelined-1 - Copy/mips.xpr}
+INFO: [Project 1-313] Project file moved from 'F:/COA assignment/Pipelined-1' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1005.188 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {F:/COA assignment/Pipelined-1 - Copy/mips.srcs/sources_1/bd/mips/mips.bd}
+Reading block design file <F:/COA assignment/Pipelined-1 - Copy/mips.srcs/sources_1/bd/mips/mips.bd>...
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding component instance block -- xilinx.com:module_ref:programCounter:1.0 - programCounter_0
+Adding component instance block -- xilinx.com:module_ref:mux:1.0 - mux_2
+Adding component instance block -- xilinx.com:module_ref:mux:1.0 - mux_3
+Adding component instance block -- xilinx.com:module_ref:signExtern:1.0 - signExtern_0
+Adding component instance block -- xilinx.com:module_ref:adder:1.0 - adder_1
+Adding component instance block -- xilinx.com:module_ref:dataMemory:1.0 - dataMemory_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_3
+Adding component instance block -- xilinx.com:module_ref:mux:1.0 - mux_4
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_4
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_5
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:module_ref:adder:1.0 - adder_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - constantFour
+Adding component instance block -- xilinx.com:module_ref:RegFile:1.0 - RegFile_0
+Adding component instance block -- xilinx.com:module_ref:alu:1.0 - alu_0
+Adding component instance block -- xilinx.com:module_ref:signExtern:1.0 - signExtern_1
+Adding component instance block -- xilinx.com:module_ref:mux:1.0 - mux_1
+Adding component instance block -- xilinx.com:module_ref:mux:1.0 - mux_0
+Adding component instance block -- xilinx.com:module_ref:instructionMemory:1.0 - instructionMemory_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_2
+Adding component instance block -- xilinx.com:module_ref:shiftLeft:1.0 - shiftLeft_0
+Adding component instance block -- xilinx.com:module_ref:AND_gate:1.0 - AND_gate_0
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_24
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_25
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_13
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_11
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_9
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_2
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_0
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_21
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_19
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_30
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_14
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_7
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_20
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_12
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_10
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_27
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_28
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_6
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_22
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_29
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_18
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_17
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_8
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_16
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_4
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_23
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_5
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_3
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_26
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_1
+Adding component instance block -- xilinx.com:module_ref:dff:1.0 - dff_15
+Adding component instance block -- xilinx.com:module_ref:controlLogic:1.0 - controlLogic_0
+Successfully read diagram <mips> from block design file <F:/COA assignment/Pipelined-1 - Copy/mips.srcs/sources_1/bd/mips/mips.bd>
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 28 17:07:56 2022...
